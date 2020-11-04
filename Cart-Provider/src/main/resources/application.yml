@@ -1,0 +1,21 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: CartProvider
+  rabbitmq:
+    host: 124.71.183.250
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+  cloud:
+    nacos:
+      discovery: #实现注册中心
+        server-addr: 124.71.183.250:8848
+  datasource:
+    url: jdbc:mysql://124.71.183.250:3306/t_cart?serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
