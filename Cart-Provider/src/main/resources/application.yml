@@ -2,7 +2,7 @@ server:
   port: 8081
 spring:
   application:
-    name: CartProvider
+    name: Cart-Provider
   rabbitmq:
     host: 124.71.183.250
     port: 5672
@@ -14,7 +14,7 @@ spring:
       discovery: #实现注册中心
         server-addr: 124.71.183.250:8848
   datasource:
-    url: jdbc:mysql://124.71.183.250:3306/t_cart?serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://124.71.183.250:3306/cart?serverTimezone=Asia/Shanghai
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: root

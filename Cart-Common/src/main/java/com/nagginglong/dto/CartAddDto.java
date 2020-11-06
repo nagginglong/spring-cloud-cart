@@ -1,4 +1,4 @@
-package nagginglong.dto;
+package com.nagginglong.dto;
 
 import lombok.Data;
 
@@ -15,6 +15,6 @@ public class CartAddDto {
     private int skuid;
     private int uid;
     private int jprice;
-    private int count;
+    private int scount;
 
 }

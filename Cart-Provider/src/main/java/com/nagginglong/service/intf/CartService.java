@@ -1,7 +1,7 @@
 package com.nagginglong.service.intf;
 
-import nagginglong.dto.CartAddDto;
-import nagginglong.vo.Result;
+import com.nagginglong.dto.CartAddDto;
+import com.nagginglong.vo.Result;
 
 /**
  * description:
@@ -17,13 +17,13 @@ public interface CartService {
     Result add(CartAddDto dto);
 
     //根据加减修改购物车数量
-    Result updateScountByaddDec(CartAddDto dto);
+    Result updateScountByaddOrDec(CartAddDto dto);
 
     //根据输入的数量修改购物车的数量
     Result updateByScount(CartAddDto dto);
 
     //删除购物车
-    Result delScount(Integer id);
+    Result delOne(Integer id);
 
     //查询购物车信息
     Result All(Integer uid);

@@ -1,4 +1,4 @@
-package nagginglong.config;
+package com.nagginglong.config;
 
 /**
  * description: 返回值类型类

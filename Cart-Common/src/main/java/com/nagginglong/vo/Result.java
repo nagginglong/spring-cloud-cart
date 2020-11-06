@@ -1,7 +1,8 @@
-package nagginglong.vo;
+package com.nagginglong.vo;
 
+import com.nagginglong.config.ResultType;
 import lombok.Data;
-import nagginglong.config.ResultType;
+import com.nagginglong.config.ResultType;
 
 /**
  * description: 返回结果的类
@@ -38,12 +39,12 @@ public class Result<T> {
         return setResult(ResultType.RESULT_SUCCESS,"success",data);
     }
 
-    public static <T>Result fail(){
+    public static Result fail(){
 
         return setResult(ResultType.RESULT_Fail,"fail",null);
     }
 
-    public static <T>Result fail(String msg){
+    public static Result fail(String msg){
 
         return setResult(ResultType.RESULT_Fail,"fail",null);
     }
